@@ -11737,3 +11737,8 @@ html {
 .row .card p{
   margin: 2px;
 }
+.row .card:hover{
+  transform: scale(1.10);
+  transition: .2s;
+  cursor: pointer;
+}
