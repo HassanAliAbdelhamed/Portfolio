@@ -1,5 +1,14 @@
 import React, { useState } from 'react';
-import { Mail, Phone, MapPin, Send, Github, Linkedin, Twitter, MessageCircle } from 'lucide-react';
+import {
+  Mail,
+  Phone,
+  MapPin,
+  Send,
+  Github,
+  Linkedin,
+  Twitter,
+  MessageCircle,
+} from 'lucide-react';
 
 const Contact: React.FC = () => {
   const [formData, setFormData] = useState({
@@ -11,9 +20,11 @@ const Contact: React.FC = () => {
 
   const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const handleInputChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
     const { name, value } = e.target;
-    setFormData(prev => ({
+    setFormData((prev) => ({
       ...prev,
       [name]: value,
     }));
@@ -22,10 +33,10 @@ const Contact: React.FC = () => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
-    
+
     // Simulate form submission
-    await new Promise(resolve => setTimeout(resolve, 2000));
-    
+    await new Promise((resolve) => setTimeout(resolve, 2000));
+
     console.log('Form submitted:', formData);
     setFormData({ name: '', email: '', subject: '', message: '' });
     setIsSubmitting(false);
@@ -56,47 +67,62 @@ const Contact: React.FC = () => {
   ];
 
   const socialLinks = [
-    { icon: Github, url: 'https://github.com/HassanAliAbdelhamed', label: 'GitHub', color: 'hover:text-gray-900 dark:hover:text-white' },
-    { icon: Linkedin, url: 'https://www.linkedin.com/in/elhassan-ali]', label: 'LinkedIn', color: 'hover:text-blue-600' },
+    {
+      icon: Github,
+      url: 'https://github.com/HassanAliAbdelhamed',
+      label: 'GitHub',
+      color: 'hover:text-gray-900 dark:hover:text-white',
+    },
+    {
+      icon: Linkedin,
+      url: 'https://www.linkedin.com/in/elhassan-ali',
+      label: 'LinkedIn',
+      color: 'hover:text-blue-600',
+    },
   ];
 
   return (
-    <section id="contact" className="section-padding bg-gray-50 dark:bg-gray-800">
-      <div className="max-w-7xl mx-auto">
+    <section
+      id="contact"
+      className="section-padding bg-gray-50 dark:bg-gray-800 scroll-mt-20"
+    >
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 dark:text-white mb-4">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 dark:text-white mb-4">
             Get In <span className="gradient-text">Touch</span>
           </h2>
-          <p className="text-xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">
-            I'm always open to discussing new opportunities and interesting projects. 
-            Let's create something amazing together!
+          <p className="text-base sm:text-lg text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">
+            I'm always open to discussing new opportunities and interesting
+            projects. Let's create something amazing together!
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-3 gap-12">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-12">
           {/* Contact Information */}
-          <div className="lg:col-span-1 space-y-8">
-            <div className="bg-white dark:bg-gray-900 rounded-3xl p-8 shadow-xl">
+          <div className="space-y-8">
+            <div className="bg-white dark:bg-gray-900 rounded-3xl p-6 sm:p-8 shadow-xl">
               <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">
                 Contact Information
               </h3>
-              
+
               <div className="space-y-6">
                 {contactInfo.map((info, index) => (
                   <a
                     key={index}
                     href={info.link}
-                    className="flex items-center space-x-4 p-4 rounded-2xl hover:bg-gray-50 dark:hover:bg-gray-800 transition-all duration-300 group overflow-hidden text-ellipsis"
+                    className="flex items-center space-x-4 p-4 rounded-2xl hover:bg-gray-50 dark:hover:bg-gray-800 transition-all duration-300 group overflow-hidden"
                   >
-                    <div className={`p-3 bg-gradient-to-r ${info.color} rounded-2xl text-white group-hover:scale-110 transition-transform duration-300`}>
+                    <div
+                      className={`p-3 bg-gradient-to-r ${info.color} rounded-2xl text-white group-hover:scale-110 transition-transform duration-300`}
+                    >
                       <info.icon className="w-6 h-6" />
                     </div>
                     <div>
                       <div className="text-sm font-medium text-gray-500 dark:text-gray-400">
                         {info.title}
                       </div>
-                      <div className="text-lg font-semibold text-gray-900 dark:text-white">
+                      <div className="text-lg font-semibold text-gray-900 dark:text-white truncate max-w-[200px] sm:max-w-[300px]">
                         {info.value}
                       </div>
                     </div>
@@ -119,21 +145,21 @@ const Contact: React.FC = () => {
                       className={`p-3 bg-gray-100 dark:bg-gray-800 rounded-2xl text-gray-600 dark:text-gray-400 ${social.color} transition-all duration-300 hover:scale-110`}
                     >
                       <social.icon className="w-6 h-6" />
-                    </a> 
+                    </a>
                   ))}
                 </div>
               </div>
             </div>
 
             {/* Quick Contact Card */}
-            <div className="bg-gradient-to-br from-primary-500 to-secondary-500 rounded-3xl p-8 text-white">
+            <div className="bg-gradient-to-br from-primary-500 to-secondary-500 rounded-3xl p-6 sm:p-8 text-white">
               <div className="flex items-center space-x-3 mb-4">
                 <MessageCircle className="w-8 h-8" />
                 <h3 className="text-xl font-bold">Let's Chat!</h3>
               </div>
               <p className="mb-6 opacity-90">
-                Have a project in mind? I'd love to hear about it. 
-                Send me a message and let's discuss how we can work together.
+                Have a project in mind? I'd love to hear about it. Send me a
+                message and let's discuss how we can work together.
               </p>
               <div className="text-sm opacity-75">
                 Usually responds within 24 hours
@@ -143,13 +169,13 @@ const Contact: React.FC = () => {
 
           {/* Contact Form */}
           <div className="lg:col-span-2">
-            <div className="bg-white dark:bg-gray-900 rounded-3xl p-8 shadow-xl">
+            <div className="bg-white dark:bg-gray-900 rounded-3xl p-6 sm:p-8 shadow-xl">
               <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">
                 Send Message
               </h3>
-              
+
               <form onSubmit={handleSubmit} className="space-y-6">
-                <div className="grid md:grid-cols-2 gap-6">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                   <div>
                     <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
                       Your Name
@@ -164,7 +190,7 @@ const Contact: React.FC = () => {
                       placeholder="Elhassan Ali"
                     />
                   </div>
-                  
+
                   <div>
                     <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
                       Your Email
@@ -214,7 +240,7 @@ const Contact: React.FC = () => {
                 <button
                   type="submit"
                   disabled={isSubmitting}
-                  className={`w-full btn-primary flex items-center justify-center space-x-2 ${
+                  className={`w-full btn-primary flex items-center justify-center space-x-2 py-3 text-base sm:text-lg ${
                     isSubmitting ? 'opacity-75 cursor-not-allowed' : ''
                   }`}
                 >
