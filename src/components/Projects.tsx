@@ -5,7 +5,8 @@ import qm from '../qm.jpg';
 import serviov from '../serviov.jpg';
 import burger from '../burger.jpg';
 import sonny from '../sonny.jpg';
-import { Javascript } from '@mui/icons-material';
+import carRent from '../cr.jpg';
+import light from '../lw.jpg';
 
 const Projects: React.FC = () => {
   const [activeFilter, setActiveFilter] = useState('All');
@@ -19,7 +20,7 @@ const Projects: React.FC = () => {
       technologies: ['React', 'Bootstrap','Materail UI'],
       category: 'Web',
       liveUrl: 'https://quranplus.vercel.app/',
-      githubUrl: 'https://github.com/example',
+      githubUrl: 'https://github.com/HassanAliAbdelhamed/QuranPlus',
       featured: true,
     },
     {
@@ -33,8 +34,32 @@ const Projects: React.FC = () => {
       // githubUrl: 'https://github.com/example',
       featured: true,
     },
+    
     {
       id: 3,
+      title: 'Rent Cars',
+      description: 'The Car Rent Landing Page is designed to provide customers with a seamless way to browse, compare, and book rental cars online. The page highlights the company’s services, available vehicles, pricing, and unique value propositions. With a modern UI and user-friendly layout, the landing page aims to build trust, increase bookings, and enhance customer experience.',
+      image: carRent,
+      technologies: ['HTML5', 'CSS3', 'Boostrap'],
+      category: 'Web',
+      liveUrl: 'https://hassanaliabdelhamed.github.io/Cars/',
+      githubUrl: 'https://github.com/HassanAliAbdelhamed/Cars',
+      featured: false,
+    },
+    
+    {
+      id: 4,
+      title: 'Light',
+      description: 'Quran Light is a powerful mobile app designed to help Muslims around the world connect to the Holy Quran wherever they are. If you want to listen to your favorite reciter, Quran Light is your perfect companion.',
+      image: light,
+      technologies: ['HTML5', 'CSS3', 'Tailwind CSS'],
+      category: 'Web',
+      liveUrl: 'https://hassanaliabdelhamed.github.io/Light/',
+      githubUrl: 'https://github.com/HassanAliAbdelhamed/Light',
+      featured: false,
+    },
+    {
+      id: 5,
       title: 'The Survivor',
       description: 'A blog that tells true stories whose heroes are Palestinian children and infants in Gaza. Israeli aircraft missiles killed their families while they were safe and asleep, turning them into a lone survivor who witnessed the episodes of the crime.',
       image: serviov,
@@ -45,7 +70,7 @@ const Projects: React.FC = () => {
       featured: false,
     },
     {
-      id: 4,
+      id: 6,
       title: 'Make Your Burger',
       description: 'A platform that allows you to build your own burger step by step, selecting the type of bread, meat, cheese, vegetables, and sauces to suit your taste.',
       image: burger,
@@ -56,7 +81,7 @@ const Projects: React.FC = () => {
       featured: false,
     },
     {
-      id: 5,
+      id: 7,
       title: 'Sonny Landing Page',
       description: 'A modern, responsive landing page, smooth animations, and optimized performance built with Bootstrap and wow.js.',
       image: sonny,
