@@ -25,7 +25,7 @@ const Skills: React.FC = () => {
         { name: 'C#', icon: <TbBrandCSharp className="text-cyan-500" /> },
         { name: 'SQL', icon: <TbFileTypeSql className="text-purple-500" /> },
         { name: 'ADO.NET' },
-        { name: 'Entity Framework Core', icon: <SiStyledcomponents className="text-pink-400" /> },
+        { name: 'Entity Framework Core' },
         { name: 'ASP.NET Core MVC' },
         { name: 'ASP.NET Core Web Api '}
       ],
