@@ -34,17 +34,17 @@ const Hero: React.FC = () => {
               </h1>
               
               <h2 className="text-2xl lg:text-4xl font-semibold text-gray-600 dark:text-gray-300">
-                Frontend Developer
+                .NET Full Stack Developer
               </h2>
               
               <p className="text-lg text-gray-600 dark:text-gray-400 max-w-2xl">
-                I'm a front-end developer specializing in React and React Native, passionate about building modern, responsive web and mobile apps.
+                 Highly effective and results driven Full Stack .NET Developer with comprehensive expertise spanning the entire software development lifecycle. Deeply proficient in C#, .NET Core, and gmodern frontend technologies React or Angular.
               </p>
             </div>
 
             {/* Tech Stack Pills */}
             <div className="flex flex-wrap gap-3 justify-center lg:justify-start">
-              {['React', 'React Native', 'TypeScript', 'Tailwind CSS', 'Material UI'].map((tech) => (
+              {['React', 'React Native', 'C#', 'SQL', 'ASP.NET MVC', 'Entity Framework Core','ASP.NET Web API'].map((tech) => (
                 <span
                   key={tech}
                   className="px-4 py-2 bg-white/50 dark:bg-gray-800/50 backdrop-blur-sm rounded-full text-sm font-medium text-gray-700 dark:text-gray-300 border border-gray-200 dark:border-gray-700"
@@ -66,7 +66,7 @@ const Hero: React.FC = () => {
               
               <button className="flex items-center justify-center space-x-2 px-6 py-3 border-2 border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-300 rounded-xl hover:border-primary-500 dark:hover:border-primary-400 hover:text-primary-500 dark:hover:text-primary-400 transition-all duration-300 font-semibold">
                 <Download className="w-5 h-5" />
-                <a href="https://drive.google.com/file/d/1RMDbNNJBt9RX6SkeT2kfrDZNeioZxHzt/view?usp=drive_link" target='_blank'>Download CV</a>
+                <a href="https://drive.google.com/file/d/14rBNi9e9CIl9mhfwXO-9QaNSzHZJfpkT/view" target='_blank'>Download CV</a>
               </button>
             </div>
 

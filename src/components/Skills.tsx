@@ -1,6 +1,8 @@
 import React from 'react';
 import { FaReact, FaHtml5, FaCss3Alt, FaJs, FaSass, FaReacteurope, FaBootstrap } from 'react-icons/fa';
 import { SiNextdotjs, SiTypescript, SiTailwindcss, SiMui, SiStyledcomponents, SiFigma, SiAdobexd } from 'react-icons/si';
+import { TbBrandCSharp, TbFileTypeSql } from "react-icons/tb";
+
 
 const Skills: React.FC = () => {
   const skillCategories = [
@@ -17,6 +19,18 @@ const Skills: React.FC = () => {
       ],
     },
     {
+      title: 'Backend Technologies',
+      color: 'from-purple-500 to-pink-500',
+      skills: [
+        { name: 'C#', icon: <TbBrandCSharp className="text-cyan-500" /> },
+        { name: 'SQL', icon: <TbFileTypeSql className="text-purple-500" /> },
+        { name: 'ADO.NET' },
+        { name: 'Entity Framework Core', icon: <SiStyledcomponents className="text-pink-400" /> },
+        { name: 'ASP.NET Core MVC' },
+        { name: 'ASP.NET Core Web Api '}
+      ],
+    },
+     {
       title: 'UI/UX & Styling',
       color: 'from-purple-500 to-pink-500',
       skills: [
