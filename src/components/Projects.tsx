@@ -1,12 +1,15 @@
 import React, { useState } from 'react';
 import { ExternalLink, Github, Eye, Filter } from 'lucide-react';
-import qw from '../qw.jpg';
-import qm from '../qm.jpg';
-import serviov from '../serviov.jpg';
-import burger from '../burger.jpg';
-import sonny from '../sonny.jpg';
-import carRent from '../cr.jpg';
-import light from '../lw.jpg';
+import qw from '../images/qw.jpg';
+import qm from '../images/qm.jpg';
+import serviov from '../images/serviov.jpg';
+import burger from '../images/burger.jpg';
+import sonny from '../images/sonny.jpg';
+import carRent from '../images/cr.jpg';
+import light from '../images/lw.jpg';
+import lbetak from '../images/lbetak.png';
+import Itex from '../images/Itex.png';
+
 
 const Projects: React.FC = () => {
   const [activeFilter, setActiveFilter] = useState('All');
@@ -14,6 +17,28 @@ const Projects: React.FC = () => {
   const projects = [
     {
       id: 1,
+      title: 'Lbetak – Final Project (ITI)',
+      description: 'A service marketplace platform that connects customers with skilled workers (e.g., plumbers,carpenters) and service companies, enabling easy service requests, real-time communication, and smart assistance through AI chat.',
+      image: lbetak,
+      technologies: ['TypeScript,','Angular', 'ASP.NET Core Web API','SignalR','SQL Server','EF Core','Open AI'],
+      category: 'Web',
+      liveUrl: 'https://lebetak.vercel.app/',
+      // githubUrl: 'https://github.com/HassanAliAbdelhamed/QuranPlus',
+      featured: true,
+    },
+    {
+      id: 2,
+      title: 'IT-ex',
+      description: 'Built a web-based platform that helps students prepare for software engineering interviews.',
+      image: Itex,
+      technologies: ['TypeScript', 'React','SQL Server','Entity Framework Core','ASP.net Web API'],
+      category: 'Web',
+      liveUrl: 'https://it-ex.vercel.app',
+      // githubUrl: 'https://github.com/HassanAliAbdelhamed/QuranPlus',
+      featured: true,
+    },
+    {
+      id: 3,
       title: '+ قرآن',
       description: 'Quran+ is an online platform dedicated to serving the Holy Quran through a seamless and spiritual experience for users worldwide. The platform offers a range of features that allow you to listen to the Qur’an recited by a distinguished group of sheikhs, read and reflect upon its meanings, and engage in daily recitations at your own pace.',
       image: qw,
@@ -24,7 +49,7 @@ const Projects: React.FC = () => {
       featured: true,
     },
     {
-      id: 2,
+      id: 4,
       title: '+ قرآن',
       description: 'Quran Light is a powerful mobile app designed to help Muslims around the world connect to the Holy Quran wherever they are. If you want to listen to your favorite reciter, Quran Light is your perfect companion.',
       image: qm,
@@ -36,7 +61,7 @@ const Projects: React.FC = () => {
     },
     
     {
-      id: 3,
+      id: 5,
       title: 'Rent Cars',
       description: 'The Car Rent Landing Page is designed to provide customers with a seamless way to browse, compare, and book rental cars online. The page highlights the company’s services, available vehicles, pricing, and unique value propositions. With a modern UI and user-friendly layout, the landing page aims to build trust, increase bookings, and enhance customer experience.',
       image: carRent,
@@ -48,7 +73,7 @@ const Projects: React.FC = () => {
     },
     
     {
-      id: 4,
+      id: 6,
       title: 'Light',
       description: 'Quran Light is a powerful mobile app designed to help Muslims around the world connect to the Holy Quran wherever they are. If you want to listen to your favorite reciter, Quran Light is your perfect companion.',
       image: light,
@@ -59,7 +84,7 @@ const Projects: React.FC = () => {
       featured: false,
     },
     {
-      id: 5,
+      id: 7,
       title: 'The Survivor',
       description: 'A blog that tells true stories whose heroes are Palestinian children and infants in Gaza. Israeli aircraft missiles killed their families while they were safe and asleep, turning them into a lone survivor who witnessed the episodes of the crime.',
       image: serviov,
@@ -70,7 +95,7 @@ const Projects: React.FC = () => {
       featured: false,
     },
     {
-      id: 6,
+      id: 8,
       title: 'Make Your Burger',
       description: 'A platform that allows you to build your own burger step by step, selecting the type of bread, meat, cheese, vegetables, and sauces to suit your taste.',
       image: burger,
@@ -81,7 +106,7 @@ const Projects: React.FC = () => {
       featured: false,
     },
     {
-      id: 7,
+      id: 9,
       title: 'Sonny Landing Page',
       description: 'A modern, responsive landing page, smooth animations, and optimized performance built with Bootstrap and wow.js.',
       image: sonny,

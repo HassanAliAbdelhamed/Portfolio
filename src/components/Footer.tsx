@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowUp, Heart, Code2, Github, Linkedin, Twitter, Mail } from 'lucide-react';
+import { ArrowUp, Code2, Github, Linkedin, Mail } from 'lucide-react';
 
 const Footer: React.FC = () => {
   const scrollToTop = () => {
@@ -31,11 +31,11 @@ const Footer: React.FC = () => {
               <div className="p-2 bg-gradient-to-r from-primary-500 to-secondary-500 rounded-lg">
                 <Code2 className="w-6 h-6 text-white" />
               </div>
-              <span className="text-xl font-bold gradient-text">DevPortfolio</span>
+              <span className="text-xl font-bold gradient-text">Elhassan Ali</span>
             </div>
             
             <p className="text-gray-600 dark:text-gray-400 mb-6 max-w-md">
-              Frontend Developer passionate about creating beautiful, functional, 
+              .NET Full Stack Developer passionate about creating beautiful, functional, 
               and user-friendly web applications. Always learning, always growing.
             </p>
             

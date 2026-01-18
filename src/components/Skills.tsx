@@ -1,6 +1,6 @@
 import React from 'react';
 import { FaReact, FaHtml5, FaCss3Alt, FaJs, FaSass, FaReacteurope, FaBootstrap } from 'react-icons/fa';
-import { SiNextdotjs, SiTypescript, SiTailwindcss, SiMui, SiStyledcomponents, SiFigma, SiAdobexd } from 'react-icons/si';
+import { SiTypescript, SiTailwindcss, SiMui, SiStyledcomponents, SiFigma } from 'react-icons/si';
 import { TbBrandCSharp, TbFileTypeSql } from "react-icons/tb";
 
 
@@ -27,7 +27,8 @@ const Skills: React.FC = () => {
         { name: 'ADO.NET' },
         { name: 'Entity Framework Core' },
         { name: 'ASP.NET Core MVC' },
-        { name: 'ASP.NET Core Web Api '}
+        { name: 'ASP.NET Core Web Api '},
+        { name: 'Signal R'},
       ],
     },
      {

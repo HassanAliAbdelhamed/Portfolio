@@ -1,6 +1,6 @@
 import React from 'react';
 import { ArrowRight, Download, Github, Linkedin, Mail, MapPin } from 'lucide-react';
-import profileImg from '../profile.png'
+import profileImg from '../images/ProfileImage1.jpg'
 const Hero: React.FC = () => {
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
@@ -66,7 +66,7 @@ const Hero: React.FC = () => {
               
               <button className="flex items-center justify-center space-x-2 px-6 py-3 border-2 border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-300 rounded-xl hover:border-primary-500 dark:hover:border-primary-400 hover:text-primary-500 dark:hover:text-primary-400 transition-all duration-300 font-semibold">
                 <Download className="w-5 h-5" />
-                <a href="https://drive.google.com/file/d/14rBNi9e9CIl9mhfwXO-9QaNSzHZJfpkT/view" target='_blank'>Download CV</a>
+                <a href="https://drive.google.com/file/d/1HlBvk0mJRwez4b8NbnyzI4nUFE494_6C/view" target='_blank'>Download CV</a>
               </button>
             </div>
 

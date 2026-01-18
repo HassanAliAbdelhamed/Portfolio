@@ -1,5 +1,5 @@
 import React from 'react';
-import sectionImage from "../sectionImg.jpg"
+import sectionImage from "../images/sectionImg.jpg"
 
 const About: React.FC = () => {
 
@@ -30,17 +30,14 @@ const About: React.FC = () => {
           {/* Right Content */}
           <div className="space-y-6">
             <h3 className="text-3xl font-bold text-gray-900 dark:text-white">
-              Building Modern Web & Mobile Interfaces
+              Building Scalable Full-Stack Web & Mobile Applications
             </h3>
             
             <div className="space-y-4 text-gray-600 dark:text-gray-400 text-lg leading-relaxed">
               <p>
-                I'm Elassan Ali, a dedicated Front-End Developer with a strong passion for creating clean, interactive, and responsive user interfaces. I specialize in React for web development and React Native for building cross-platform mobile applications. My journey into development started from a curiosity to build things people can actually use — and it quickly grew into a full-time craft.
-              </p>
-              
+                I'm Elassan Ali, a Full-Stack Developer who loves turning a blank terminal into a fully functional digital ecosystem. I started with a curiosity for how things look on the screen, which naturally evolved into a deep dive into how they work behind the scenes.              </p>
               <p>
-                  I turn ideas into functional and beautiful digital products. Whether it's a sleek website, a mobile app, or a complete UI system, I focus on performance, user experience, and maintainable code. I enjoy solving real-world problems through smart design and modern tools.
-                  I’m always exploring new technologies and love collaborating with teams to bring creative visions to life.
+                  Today, I build everything from sleek mobile apps to complex web platforms, focusing on the entire stack. Whether it's crafting a responsive UI or engineering a secure API, I prioritize performance and user experience at every step. I don’t just write code; I build tools that people use and enjoy.
               </p>
                 
             </div>

@@ -14,7 +14,7 @@ import {
   LightMode,
   Menu as MenuIcon,
 } from '@mui/icons-material';
-import { useThemeMode } from '../context/ThemeContext';
+import { useTheme } from '../context/ThemeContext';
 
 interface Props {
   children?: React.ReactElement;
@@ -32,7 +32,7 @@ function HideOnScroll(props: Props) {
 }
 
 const Header: React.FC = () => {
-  const { isDarkMode, toggleTheme } = useThemeMode();
+  const { isDarkMode, toggleTheme } = useTheme();
 
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
